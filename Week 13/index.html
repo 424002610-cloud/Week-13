@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamville Terminal // The J. Cole Archive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand text-danger fw-bold tracking-wider" href="#">J.COLE // DREAMVILLE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item"><a class="nav-link text-light" href="#discography">The Discography</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#request-section">Breakdown Request</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#gallery">Visual Archive</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        
+        <header class="text-center mb-5 py-3">
+            <h1 class="display-3 text-uppercase fw-bold tracking-tight">The Cole Archive</h1>
+            <p class="text-danger tracking-widest font-monospace fw-bold">INTERACTIVE SPINNING VINYLS & LYRICAL BREAKDOWNS</p>
+        </header>
+
+        <section id="discography" class="mb-5">
+            <h2 class="text-danger text-uppercase mb-4 border-start border-danger border-4 ps-3">The Discography</h2>
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="album-card p-3 bg-dark-gray border border-secondary rounded position-relative overflow-hidden cursor-pointer" 
+                         onclick="openLyricsModal('2014 Forest Hills Drive', 'Love Yourz', 'No such thing as a life that\'s better than yours', 'Heart-breaking text messages from a world that you forgot', 'True happiness isn\'t found in material success or constantly comparing yourself to others. It\'s about appreciating your unique path.', 'Social media networks create illusions of perfect lifestyles, fueling unnecessary envy and mental stress.')">
+                        <div class="vinyl-wrapper position-relative">
+                            <img src="images/fhd.jpg" class="img-fluid album-cover rounded position-relative z-2" alt="2014 Forest Hills Drive Cover">
+                            <div class="vinyl-record position-absolute top-0 z-1"></div>
+                        </div>
+                        <h4 class="mt-3 mb-1 text-white">2014 Forest Hills Drive</h4>
+                        <p class="text-danger font-monospace small mb-0">Tap to Decode Lyrics</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="album-card p-3 bg-dark-gray border border-secondary rounded position-relative overflow-hidden cursor-pointer" 
+                         onclick="openLyricsModal('Born Sinner', 'Crooked Smile', 'Look at the nation, that\'s a crooked smile brace yourself', 'We ain\'t picture perfect but we worth the picture still', 'A societal critique on how media pressures people into conforming to synthetic, unrealistic beauty metrics.', 'A powerful self-love declaration emphasizing that human flaws do not diminish a person\'s inherent value.')">
+                        <div class="vinyl-wrapper position-relative">
+                            <img src="images/born-sinner.jpg" class="img-fluid album-cover rounded position-relative z-2" alt="Born Sinner Cover">
+                            <div class="vinyl-record position-absolute top-0 z-1"></div>
+                        </div>
+                        <h4 class="mt-3 mb-1 text-white">Born Sinner</h4>
+                        <p class="text-danger font-monospace small mb-0">Tap to Decode Lyrics</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="album-card p-3 bg-dark-gray border border-secondary rounded position-relative overflow-hidden cursor-pointer" 
+                         onclick="openLyricsModal('4 Your Eyez Only', 'Change', 'I know I\'m destined for heaven, but I ain\'t ready to go', 'The only real change comes from inside', 'A vulnerable reflection on mortality, acknowledging spiritual peace while dreading systemic street violence.', 'Cole argues that external systemic change cannot manifest until individuals prioritize internal growth first.')">
+                        <div class="vinyl-wrapper position-relative">
+                            <img src="images/4yeo.jpg" class="img-fluid album-cover rounded position-relative z-2" alt="4 Your Eyez Only Cover">
+                            <div class="vinyl-record position-absolute top-0 z-1"></div>
+                        </div>
+                        <h4 class="mt-3 mb-1 text-white">4 Your Eyez Only</h4>
+                        <p class="text-danger font-monospace small mb-0">Tap to Decode Lyrics</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="album-card p-3 bg-dark-gray border border-secondary rounded position-relative overflow-hidden cursor-pointer" 
+                         onclick="openLyricsModal('The Off-Season', 'my.life', 'My life is all I got, I cannot slip', 'Say hello to the transparency, inside of me', 'Reflecting on structural hardships in Fayetteville, establishing his uncompromising work ethic.', 'Cole strips away the standard hyper-inflated rap ego in favor of absolute transparency with his listeners.')">
+                        <div class="vinyl-wrapper position-relative">
+                            <img src="images/off-season.jpg" class="img-fluid album-cover rounded position-relative z-2" alt="The Off-Season Cover">
+                            <div class="vinyl-record position-absolute top-0 z-1"></div>
+                        </div>
+                        <h4 class="mt-3 mb-1 text-white">The Off-Season</h4>
+                        <p class="text-danger font-monospace small mb-0">Tap to Decode Lyrics</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="album-card p-3 bg-dark-gray border border-secondary rounded position-relative overflow-hidden cursor-pointer" 
+                         onclick="openLyricsModal('KOD', 'FRIENDS', 'Meditate, don\'t medicate', 'Cop addiction, baseline, background', 'Cole urges his peers and listeners to process mental trauma through mindfulness instead of relying on substances.', 'Highlighting how generational trauma and systemic pressures drive individuals toward chemical coping mechanisms.')">
+                        <div class="vinyl-wrapper position-relative">
+                            <img src="images/kod.jpg" class="img-fluid album-cover rounded position-relative z-2" alt="KOD Cover">
+                            <div class="vinyl-record position-absolute top-0 z-1"></div>
+                        </div>
+                        <h4 class="mt-3 mb-1 text-white">KOD</h4>
+                        <p class="text-danger font-monospace small mb-0">Tap to Decode Lyrics</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="album-card p-3 bg-dark-gray border border-secondary rounded position-relative overflow-hidden cursor-pointer" 
+                         onclick="openLyricsModal('Friday Night Lights', 'Too Deep for the Intro', 'If storage space is low in your mind, delete some files', 'Am I about to scale the mountain or fall off a cliff?', 'A clever mental health metaphor advocating for clearing out toxic baggage to preserve internal peace.', 'Captures the intense performance anxiety of being a rising artist on the verge of either superstardom or failure.')">
+                        <div class="vinyl-wrapper position-relative">
+                            <img src="images/fnl.jpg" class="img-fluid album-cover rounded position-relative z-2" alt="Friday Night Lights Cover">
+                            <div class="vinyl-record position-absolute top-0 z-1"></div>
+                        </div>
+                        <h4 class="mt-3 mb-1 text-white">Friday Night Lights</h4>
+                        <p class="text-danger font-monospace small mb-0">Tap to Decode Lyrics</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="request-section" class="mb-5 py-4 border-top border-secondary">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="p-4 bg-dark-gray border border-danger rounded shadow-lg">
+                        <h3 class="text-danger text-uppercase mb-3 tracking-wider">Request An Unlisted Track Breakdown</h3>
+                        <p class="text-muted small">Missing your favorite bar? Submit the song title below and our DOM system will queue it dynamically.</p>
+                        
+                        <form id="breakdownForm" novalidate>
+                            <div class="mb-3">
+                                <label for="fanName" class="form-label text-light small text-uppercase">Your Rap Alias:</label>
+                                <input type="text" id="fanName" class="form-control bg-black text-white border-secondary" placeholder="e.g., Cole Fan #1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="requestedTrack" class="form-label text-light small text-uppercase">Track & Specific Bar:</label>
+                                <input type="text" id="requestedTrack" class="form-control bg-black text-white border-secondary" placeholder="e.g., Tale of 2 Citiez - 'In the morning...' ">
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 fw-bold text-uppercase tracking-wider">Submit Request</button>
+                        </form>
+
+                        <p id="formFeedback" class="mt-3 mb-0 text-center fw-bold small"></p>
+
+                        <div id="requestReceipt" class="mt-4 p-3 bg-black border border-secondary rounded" style="display: none;">
+                            <h5 class="text-success text-uppercase small fw-bold mb-2">✔ Request Logged in DOM</h5>
+                            <p class="mb-1 small text-muted">User: <span id="receiptUser" class="text-white fw-bold"></span></p>
+                            <p class="mb-0 small text-muted">Track Selected: <span id="receiptTrack" class="text-white fw-bold"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-4 border-top border-secondary">
+            <h2 class="text-danger text-uppercase mb-4 border-start border-danger border-4 ps-3">Visual Archive</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <img src="images/cole-1.jpg" class="img-fluid rounded gallery-img border border-secondary" alt="J. Cole Studio session">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="images/cole-2.jpg" class="img-fluid rounded gallery-img border border-secondary" alt="J. Cole Live Performance">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="images/cole-3.jpg" class="img-fluid rounded gallery-img border border-secondary" alt="Dreamville Fest Crowd View">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="images/cole-4.jpg" class="img-fluid rounded gallery-img border border-secondary" alt="J. Cole Portrait">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="lyricsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white border border-danger">
+                <div class="modal-header border-secondary bg-black">
+                    <h5 class="modal-title" id="modalAlbumTitle">Album Lyrics</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-danger mb-3" id="modalTrackTitle">Track Name</h3>
+                    <p class="text-muted small mb-3">Click on either Bar 1 or Bar 2 to unpack the true story behind the line.</p>
+                    
+                    <div class="lyric-box p-3 bg-black rounded border border-secondary mb-4">
+                        <div id="lyricBar1" class="lyric-line p-2 rounded cursor-pointer" onclick="selectBar(1)"></div>
+                        <div id="lyricBar2" class="lyric-line p-2 rounded cursor-pointer mt-2" onclick="selectBar(2)"></div>
+                    </div>
+
+                    <div class="meaning-box p-3 rounded">
+                        <h6 class="text-danger text-uppercase tracking-wider mb-2">Lyrical Meaning:</h6>
+                        <p id="meaningText" class="mb-0 text-gray fst-italic">Choose a line above to display the genius breakdown...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
